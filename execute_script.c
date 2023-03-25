@@ -29,6 +29,7 @@ void execute_script(void)
 		line_number++;
 		/* Finds opcode in ops[] */
 		mem.token = strtok(line, " \n");
+
 		if (mem.token == NULL || mem.token[0] == '#')
 			continue;
 		for (i = 0; ops[i].opcode != NULL; i++)
